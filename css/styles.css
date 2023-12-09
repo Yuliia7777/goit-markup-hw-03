@@ -194,10 +194,15 @@ img {
 }
 
 .list-content {
+  display: flex;
+  gap: 24px;
+}
+
+.list-content-iteam {
   width: calc((100% - 72px) / 4);
 }
 
-.list-content-iteam .content-header {
+.content-header {
   color: var(--NAVY-BLUE, #2e2f42);
   margin-bottom: 8px;
   font-family: Roboto;
@@ -240,7 +245,7 @@ img {
   gap: 24px;
 }
 
-.team-item {
+.team-iteam {
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
 }
@@ -266,6 +271,11 @@ img {
   letter-spacing: 0.02em;
 }
 
+.portfolio {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .portfolio-head {
   color: var(--NAVY-BLUE, #2e2f42);
   text-align: center;
@@ -277,13 +287,14 @@ img {
   letter-spacing: 0.72px;
   text-transform: capitalize;
   padding: 120px 0 120px 0;
+  margin-bottom: 72px;
 }
 
 .list-portfolio {
   display: flex;
   flex-wrap: wrap;
   gap: 48px 24px;
-  column-gap: 12px;
+  column-gap: 24px;
   row-gap: 48px;
 }
 
